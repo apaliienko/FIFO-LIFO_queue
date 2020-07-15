@@ -7,8 +7,9 @@ count, maxcount = 1, 10000  # count of tasks
 intensity = 0.9  # intensity of task's appearance
 service = 1.0  # service time of one task
 
-# arrival time of new task
+
 def tnext():
+    # arrival time of new task
     tnext = -log(random()) / intensity
     return tnext
 
@@ -25,12 +26,10 @@ tin, t = 0.0, 0.0
 queue.append(tin)
 
 while count <= maxcount:
-    try:
+    if len(queue) > 0:
         tin = queue.pop(typeofqueue)
         count += 1
         tend = t + tin + service
-    except IndexError:
-        pass
     tnex = tin + tnext()
     queue.append(tnex)
     if tend > tnex:
