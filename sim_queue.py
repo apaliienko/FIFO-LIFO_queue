@@ -1,11 +1,11 @@
 from random import random
 from math import log, pow
 
-typeofqueue = -1  # -1 = LIFO, 0 = FIFO
-actualtime = 10  # actual time(0-10) of completing tasks
+typeofqueue = -1            # -1 = LIFO, 0 = FIFO
+actualtime = 10             # actual time(0-10) of completing tasks
 count, maxcount = 1, 10000  # count of tasks
-intensity = 0.9  # intensity of task's appearance
-service = 1.0  # service time of one task
+intensity = 0.9             # intensity of task's appearance
+service = 1.0               # service time of one task
 
 
 def tnext():
