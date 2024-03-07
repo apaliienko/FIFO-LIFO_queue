@@ -20,7 +20,7 @@ else:
     typeofqueue = -1
     lettertype = 'L'
 
-print("----------{}IFO----------".format(lettertype))
+print("-----------{}IFO-----------".format(lettertype))
 timeinsystem, queue = [], []
 tin, t = 0.0, 0.0
 queue.append(tin)
